@@ -1,69 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Rashedul Hasan Ripon</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Home | Rashedul Hasan Ripon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Rashedul Hasan Ripon</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  </header>
 
-<!-- Top Banner -->
-<header class="top-banner">
-  <img src="profile.jpg" class="profile-pic">
-  <h1 class="name">Rashedul Hasan Ripon</h1>
-  <p class="subtitle">Economics | Research | Data Analysis</p>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="coursework.html">Coursework</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="lng.html">LNG Analyst</a>
+    <a href="bridge.html">Bridge Player</a>
+  </nav>
 
-<!-- Navigation -->
-<nav class="navbar">
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <main>
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>Your short academic bio or introduction goes here.</p>
+    </div>
+  </main>
 
-<!-- About Section -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a researcher in Economics specializing in energy economics, development economics, and applied econometrics.
-    My work focuses on policy-relevant topics with strong empirical foundations.
-  </p>
-</section>
+  <footer>
+    <div>© 2025 Rashedul Hasan Ripon</div>
+    <div style="margin-top:8px;">
+      <a href="https://github.com/rashedulripon" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://scholar.google.com/citations?user=n3DfFAkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
+      <a href="https://www.linkedin.com/in/riponche1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
 
-<!-- Research Section -->
-<section id="research" class="section">
-  <h2>Research</h2>
-  <div class="card">
-    <h3>Environmental Exposure and Child Health: Evidence from Rural Bangladesh</h3>
-    <p>Ongoing research with STATA-based empirical strategy.</p>
-  </div>
-  <div class="card">
-    <h3>Energy Security and Geopolitical Risk</h3>
-    <p>Part of my MS thesis focusing on Bangladesh energy sector.</p>
-  </div>
-</section>
-
-<!-- Teaching Section -->
-<section id="teaching" class="section">
-  <h2>Teaching & Work Experience</h2>
-  <ul>
-    <li>Graduate Research Assistant – North South University</li>
-    <li>Econometrics Tutor – Undergraduate Program</li>
-  </ul>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>GitHub: github.com/rashedulripon</p>
-</section>
-
-<footer>
-  <p>© 2025 Rashedul Hasan Ripon</p>
-</footer>
-
+  <script>
+    // Add the toggleDarkMode & other scripts here, if you did not load externally
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
